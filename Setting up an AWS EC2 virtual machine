@@ -4,3 +4,15 @@ https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRan
 Access running EC2 from Putty
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
 
+Transer files t EC2 using pscp
+
+sudo apt update
+sudo apt upgrade
+sudo apt install putty-tools
+pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt
+pscp -i C:/Users/Thilina_Chathuranga/Documents/AWS Key/dl-key.ppk C:/Users/Thilina_Chathuranga/Documents/AWS Key/sample.txt ec2-13-127-235-54.ap-south-1.compute.amazonaws.com:/home/ubuntu/sample.txt
+Not working.
+
+Transer files t EC2 using WinSCP
+sudo apt-get install openssh-client
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
